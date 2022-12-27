@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "JavaScript Closures"
+---
+
 JavaScript closures are a fundamental concept in the JavaScript programming language that enables developers to write more powerful and efficient code. In this article, we'll explore what closures are, how they work, and how to use them in your own programs.
 
 What are Closures?
