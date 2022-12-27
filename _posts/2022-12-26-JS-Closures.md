@@ -13,13 +13,14 @@ To understand closures, it's important to first understand the concept of lexica
 
 Let's look at an example to illustrate how closures work:
 
+
 <code>
-function greet(name) {
+  function greet(name) {
   let greeting = "Hello, ";
   return function() {
     console.log(greeting + name);
+    }
   }
-}
 </code>
 
 let sayHello = greet("John");
