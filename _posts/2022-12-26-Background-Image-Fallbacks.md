@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Background Image Fallbacks!"
+title:  "Background Image Fallbacks"
 ---
 
 There is a new function called Image() that is currently not supported by any browswer,
