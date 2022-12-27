@@ -21,10 +21,10 @@ function greet(name) {
     console.log(greeting + name);
    }
 }
-
-
-let sayHello = greet("John");
-sayHello(); // Outputs "Hello, John"
+</code>
+<code>
+let sayHello = greet("John");<br>
+sayHello(); // Outputs "Hello, John"<br>
 </code>
 
 In this example, we have a function called greet that takes in a name and returns a function that logs a greeting to the console. We then create a variable called sayHello and assign it to the result of calling the greet function with the argument "John".
