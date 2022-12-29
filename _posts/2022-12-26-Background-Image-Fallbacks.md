@@ -8,11 +8,11 @@ Using background images in web design can be a powerful way to add visual intere
 There are a few different ways to handle background image fallbacks in web design. Here are some common approaches:
 
 Use the background property with a fallback color: One option is to use the background property in CSS, which allows you to specify both a background image and a fallback color. If the background image fails to load, the fallback color will be displayed instead.
-Here's an example of how to use the background property with a fallback color:\n
+Here's an example of how to use the background property with a fallback color:\
 
 <code>
-.element {\n
-  background: #ccc url(image.jpg) no-repeat;\n
+.element {\
+  background: #ccc url(image.jpg) no-repeat;\
 }
 </code>
 
@@ -25,9 +25,9 @@ Use the object-fit property: A third option is to use the object-fit property, w
 Here's an example of how to use the object-fit property to handle background image fallbacks:\n
 
 <code>
-.element {\n
-  background-image: url(image.jpg);\n
-  object-fit: contain;\n
+.element {  
+  background-image: url(image.jpg);  
+  object-fit: contain;  
 }
 </code>
   
