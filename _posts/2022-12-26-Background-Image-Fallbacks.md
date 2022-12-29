@@ -10,7 +10,8 @@ There are a few different ways to handle background image fallbacks in web desig
 Use the background property with a fallback color: One option is to use the background property in CSS, which allows you to specify both a background image and a fallback color. If the background image fails to load, the fallback color will be displayed instead.
 Here's an example of how to use the background property with a fallback color:  
 
-`.element {  
+`  
+.element {  
 
   background: #ccc url(image.jpg) no-repeat;  
   
