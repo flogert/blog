@@ -21,6 +21,13 @@ Here's an example of how to use the background property with a fallback color:
 In this example, the fallback color is #ccc, and the background image is image.jpg. If the image fails to load, the fallback color will be displayed.
 
 Use the <img> tag as a fallback: Another option is to use the <img> tag as a fallback for a background image. This approach can be useful if you want to use the same image as both a background image and a regular image.
+Here's an example of how to use the <img> tag as a fallback for a background image:
+
+    <div class="element" style="background-image: url(image.jpg);">
+      <img src="image.jpg" alt="">
+    </div>
+
+In this example, the <div> element has a background image specified using the background-image property. The <img> element is then used as a fallback, with the same image specified as the src attribute. If the background image fails to load, the <img> element will be displayed instead.
 
 
 Use the object-fit property: A third option is to use the object-fit property, which allows you to specify how an image should be resized to fit within its container. By setting the object-fit property to contain or cover, you can ensure that the image scales proportionally and maintains its aspect ratio.
