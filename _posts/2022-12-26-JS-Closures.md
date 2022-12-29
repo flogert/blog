@@ -5,7 +5,7 @@ title:  "JavaScript Closures"
 
 JavaScript closures are a fundamental concept in the JavaScript programming language that enables developers to write more powerful and efficient code. In this article, we'll explore what closures are, how they work, and how to use them in your own programs.
 
-##### What are Closures?
+## What are Closures?
 
 A closure is a function that remembers and has access to variables and arguments from its parent scope, even after the parent function has finished executing. This allows the closure to retain its state and continue to reference and manipulate variables from the parent scope, even after the parent function has been called.
 
@@ -28,7 +28,7 @@ When we call the sayHello function, it logs the greeting "Hello, John" to the co
 
 This is because the inner function that is returned from the greet function has a closure over the variables from the parent scope. This means that the inner function has access to the variables defined in the parent scope, even after the parent function has completed execution.
 
-##### Why Use Closures?
+## Why Use Closures?
 
 Closures can be very useful in a number of different situations. One common use case is to create private variables within a function. Because the inner function has a closure over the variables in the parent scope, it can access and manipulate these variables, even though they are not directly accessible from the global scope.
 
