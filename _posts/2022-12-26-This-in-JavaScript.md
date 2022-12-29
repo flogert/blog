@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "'This' In JavaScript"
+title:  "'This' in JavaScript"
 ---
 
 In JavaScript, the this keyword refers to the object that is currently executing the code. The value of this can change depending on how the code is called.
