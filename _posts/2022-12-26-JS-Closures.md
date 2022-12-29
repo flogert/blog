@@ -5,7 +5,7 @@ title:  "JavaScript Closures"
 
 JavaScript closures are a fundamental concept in the JavaScript programming language that enables developers to write more powerful and efficient code. In this article, we'll explore what closures are, how they work, and how to use them in your own programs.
 
-##What are Closures?
+##### What are Closures?
 
 A closure is a function that remembers and has access to variables and arguments from its parent scope, even after the parent function has finished executing. This allows the closure to retain its state and continue to reference and manipulate variables from the parent scope, even after the parent function has been called.
 
@@ -14,24 +14,22 @@ To understand closures, it's important to first understand the concept of lexica
 Let's look at an example to illustrate how closures work:
 
 
-`
-function greet(name) {  
+    function greet(name) {  
 
-  let greeting = "Hello, ";  
-  
-  return function() {  
-  
-    console.log(greeting + name);  
+      let greeting = "Hello, ";  
+
+      return function() {  
+
+        console.log(greeting + name);  
+
+       }  
+
+    }  
+
+    let sayHello = greet("John");  
+
+    sayHello(); // Outputs "Hello, John"  
     
-   }  
-   
-}  
-
-let sayHello = greet("John");  
-
-sayHello(); // Outputs "Hello, John"  
-
-`
 
 In this example, we have a function called greet that takes in a name and returns a function that logs a greeting to the console. We then create a variable called sayHello and assign it to the result of calling the greet function with the argument "John".
 
@@ -39,37 +37,36 @@ When we call the sayHello function, it logs the greeting "Hello, John" to the co
 
 This is because the inner function that is returned from the greet function has a closure over the variables from the parent scope. This means that the inner function has access to the variables defined in the parent scope, even after the parent function has completed execution.
 
-##Why Use Closures?
+##### Why Use Closures?
 
 Closures can be very useful in a number of different situations. One common use case is to create private variables within a function. Because the inner function has a closure over the variables in the parent scope, it can access and manipulate these variables, even though they are not directly accessible from the global scope.
 
-Here's an example of using a closure to create a private variable:\n
-
-`
-function counter() {  
-
-  let count = 0;  
-  
-  return function() {  
-  
-    count++;  
-    
-    console.log(count);  
-    
-  }  
-  
-}  
+Here's an example of using a closure to create a private variable:
 
 
-let incrementCounter = counter();  
+    function counter() {  
 
-incrementCounter(); // Outputs 1  
+      let count = 0;  
 
-incrementCounter(); // Outputs 2  
+      return function() {  
 
-incrementCounter(); // Outputs 3  
+        count++;  
 
-`
+        console.log(count);  
+
+      }  
+
+    }  
+
+
+    let incrementCounter = counter();  
+
+    incrementCounter(); // Outputs 1  
+
+    incrementCounter(); // Outputs 2  
+
+    incrementCounter(); // Outputs 3  
+
 
 In this example, we have a function called counter that defines a private variable called count. We then return an inner function that increments the value of count and logs it to the console.
 
