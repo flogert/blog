@@ -13,23 +13,14 @@ To understand closures, it's important to first understand the concept of lexica
 
 Let's look at an example to illustrate how closures work:
 
-
     function greet(name) {  
-
       let greeting = "Hello, ";  
-
       return function() {  
-
         console.log(greeting + name);  
-
        }  
-
     }  
-
     let sayHello = greet("John");  
-
     sayHello(); // Outputs "Hello, John"  
-    
 
 In this example, we have a function called greet that takes in a name and returns a function that logs a greeting to the console. We then create a variable called sayHello and assign it to the result of calling the greet function with the argument "John".
 
@@ -43,28 +34,17 @@ Closures can be very useful in a number of different situations. One common use 
 
 Here's an example of using a closure to create a private variable:
 
-
     function counter() {  
-
       let count = 0;  
-
       return function() {  
-
         count++;  
-
         console.log(count);  
-
       }  
-
     }  
 
-
     let incrementCounter = counter();  
-
     incrementCounter(); // Outputs 1  
-
     incrementCounter(); // Outputs 2  
-
     incrementCounter(); // Outputs 3  
 
 
