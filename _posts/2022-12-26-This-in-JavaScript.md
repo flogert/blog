@@ -11,41 +11,41 @@ In a regular function, this refers to the global object (either window in the br
 For example:
 
 
-  function test() {  
+    function test() {  
 
     console.log(this);  
   
-  }  
+    }  
 
 
-  test(); // logs the global object
+    test(); // logs the global object
 
 
 In an object method, this refers to the object itself.
 For example:
 
 
-  const obj = {  
+    const obj = {  
 
-  prop: 'Hello',  
-    
-  greeting: function() {  
+    prop: 'Hello',  
+
+    greeting: function() {  
   
     console.log(this.prop);  
     
     }  
   
-  }  
+    }  
 
-  
-  obj.greeting(); // logs 'Hello'
+
+    obj.greeting(); // logs 'Hello'
 
 
 In a class method, this refers to the instance of the class.
 For example:
 
 
-  class MyClass {  
+    class MyClass {  
 
     constructor(prop) {  
 
@@ -60,27 +60,27 @@ For example:
 
     }  
 
-  }  
+    }  
 
 
-  const instance = new MyClass('Hello');  
+    const instance = new MyClass('Hello');  
 
-  instance.greeting(); // logs 'Hello'  
+    instance.greeting(); // logs 'Hello'  
 
 
 
 this can also be bound explicitly using the call, apply, or bind methods.
 For example:
 
-  function test() {  
+     function test() {  
 
     console.log(this.prop);  
 
-  }  
+     }  
 
 
-  const obj = { prop: 'Hello' };  
+    const obj = { prop: 'Hello' };  
 
 
-  test.call(obj); // logs 'Hello'  
+    test.call(obj); // logs 'Hello'  
 
