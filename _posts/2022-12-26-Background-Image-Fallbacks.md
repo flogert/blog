@@ -8,33 +8,26 @@ Using background images in web design can be a powerful way to add visual intere
 There are a few different ways to handle background image fallbacks in web design. Here are some common approaches:
 
 Use the background property with a fallback color: One option is to use the background property in CSS, which allows you to specify both a background image and a fallback color. If the background image fails to load, the fallback color will be displayed instead.
-Here's an example of how to use the background property with a fallback color:
+Here's an example of how to use the background property with a fallback color:\n
+
 <code>
-.element {
-  background: #ccc url(image.jpg) no-repeat;
+.element {\n
+  background: #ccc url(image.jpg) no-repeat;\n
 }
 </code>
 
 In this example, the fallback color is #ccc, and the background image is image.jpg. If the image fails to load, the fallback color will be displayed.
 
 Use the <img> tag as a fallback: Another option is to use the <img> tag as a fallback for a background image. This approach can be useful if you want to use the same image as both a background image and a regular image.
-Here's an example of how to use the <img> tag as a fallback for a background image:
 
-<code>
-<div class="element" style="background-image: url(image.jpg);">
-  <img src="image.jpg" alt="">
-</div>
-</code>
-
-In this example, the <div> element has a background image specified using the background-image property. The <img> element is then used as a fallback, with the same image specified as the src attribute. If the background image fails to load, the <img> element will be displayed instead.
 
 Use the object-fit property: A third option is to use the object-fit property, which allows you to specify how an image should be resized to fit within its container. By setting the object-fit property to contain or cover, you can ensure that the image scales proportionally and maintains its aspect ratio.
-Here's an example of how to use the object-fit property to handle background image fallbacks:
+Here's an example of how to use the object-fit property to handle background image fallbacks:\n
 
 <code>
-.element {
-  background-image: url(image.jpg);
-  object-fit: contain;
+.element {\n
+  background-image: url(image.jpg);\n
+  object-fit: contain;\n
 }
 </code>
   
