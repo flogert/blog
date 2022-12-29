@@ -11,22 +11,22 @@ A closure is a function that remembers and has access to variables and arguments
 
 To understand closures, it's important to first understand the concept of lexical scoping in JavaScript. Lexical scoping refers to the way in which the JavaScript interpreter determines the scope of a variable by looking at its position in the source code. In JavaScript, each time a function is defined, it creates a new scope. This means that variables defined within a function are only accessible within that function, and not in the global scope or any other nested scopes.
 
-Let's look at an example to illustrate how closures work:\n
+Let's look at an example to illustrate how closures work:\
 
 
 <code>
-function greet(name) {\n
-  let greeting = "Hello, ";\n
-  return function() {\n
-    console.log(greeting + name);\n
-   }\n
-}\n
-  
+function greet(name) {\
+  let greeting = "Hello, ";\
+  return function() {\
+    console.log(greeting + name);\
+   }\
+}\
 </code>
+
 <code>
-let sayHello = greet("John");<br>\n
-sayHello(); // Outputs "Hello, John"<br>\n
-</code>\n
+let sayHello = greet("John");<br>\
+sayHello(); // Outputs "Hello, John"<br>\
+</code>\
 
 In this example, we have a function called greet that takes in a name and returns a function that logs a greeting to the console. We then create a variable called sayHello and assign it to the result of calling the greet function with the argument "John".
 
@@ -41,20 +41,20 @@ Closures can be very useful in a number of different situations. One common use 
 Here's an example of using a closure to create a private variable:\n
 
 <code>
-function counter() {\n
-  let count = 0;\n
-  return function() {\n
-    count++;\n
-    console.log(count);\n
-  }\n
-}\n
+function counter() {\
+  let count = 0;\
+  return function() {\
+    count++;\
+    console.log(count);\
+  }\
+}\
 </code>
 
-<code>\n
-let incrementCounter = counter();\n
-incrementCounter(); // Outputs 1\n
-incrementCounter(); // Outputs 2\n
-incrementCounter(); // Outputs 3\n
+<code>\
+let incrementCounter = counter();\
+incrementCounter(); // Outputs 1\
+incrementCounter(); // Outputs 2\
+incrementCounter(); // Outputs 3\
 </code>
 
 In this example, we have a function called counter that defines a private variable called count. We then return an inner function that increments the value of count and logs it to the console.
